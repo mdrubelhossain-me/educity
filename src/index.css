@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 html,
 body {
@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
 }
 
 a{
@@ -20,4 +21,19 @@ a{
     color: inherit;
     line-height: 1;
     cursor: pointer;
+}
+
+.container{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.btn{
+    border: none;
+    background-color: #ff7a05;
+    color: white;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 28px;
 }
