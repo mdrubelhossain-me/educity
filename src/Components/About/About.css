@@ -1,0 +1,41 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+}
+.about .about-left-section{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about .about-left-section .about-photo{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about .about-right-section{
+    flex-basis: 56%;
+}
+
+.about .about-left-section .play-icon{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about .about-right-section h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    opacity: .8;
+}
+.about .about-right-section h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    margin: 0px 0 12px 0;
+}

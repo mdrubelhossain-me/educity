@@ -12,7 +12,11 @@ nav{
     position: fixed;
 }
 nav .logo{
-    width: 120px;
+    color: white;
+    font-size: 22px;;
+}
+nav .logo span{
+    padding-left: 8px;
 }
 nav ul li{
     color: white;
