@@ -7,6 +7,7 @@ import About from './Components/About/About';
 import Gallery from './Components/Gallery/Gallery';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Testimonial/>
       <Title subTitle='Contact' title='Get In Touch'/>
       <Contact/>
+      <Footer/>
     </div>
   );
 };

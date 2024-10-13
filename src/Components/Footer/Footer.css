@@ -1,0 +1,15 @@
+.footer {
+    background-color: #0e0449;
+    color: white;
+    padding: 50px 0px;
+}
+.footer p{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.footer ul li{
+    list-style: none;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
