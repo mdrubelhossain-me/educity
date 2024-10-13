@@ -7,6 +7,32 @@ import location_icon from '../../assets/images/location-icon.png'
 
 
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "20e06d65-d116-44ef-ae4e-75916a0f7869");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
+
+
     return (
         <div className='container contact'>
             <div className="contact-col">
@@ -19,15 +45,16 @@ const Contact = () => {
                 </ul>
             </div>
             <div className="contact-col">
-                <form action="">
+                <form action="" onSubmit={onSubmit}>
                     <label htmlFor="name">Enter Your Name</label>
-                    <input type="text" name='name' id='name' required />
-                    <label htmlFor="phone">Phone</label>
-                    <input type="text" name='phone' id='phone' required />
+                    <input type="text" name='name' id='name' placeholder='Name' required />
+                    <label htmlFor="phone">Enter Your Phone</label>
+                    <input type="text" name='phone' id='phone' placeholder='Phone' required />
                     <label htmlFor="details">Details</label>
-                    <textarea name="details" id="details" rows={8} required></textarea>
+                    <textarea name="details" id="details" rows={8} placeholder='Details' required></textarea>
                     <button type='submit' className='btn'>Send Now</button>
                 </form>
+                <span>{result}</span>
             </div>
         </div>
     );
