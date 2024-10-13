@@ -37,3 +37,11 @@ a{
     cursor: pointer;
     border-radius: 28px;
 }
+
+/* Media Query */
+@media (max-width: 1200px){
+    .container{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
