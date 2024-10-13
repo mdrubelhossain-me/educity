@@ -9,7 +9,7 @@ import g_4 from '../../assets/images/gallery-4.png'
 class Gallery extends Component {
     render() {
         return (
-            <div className='container gallery-section'>
+            <div className='container gallery-section' id='campus'>
                 <div className="gallery">
                     <img src={g_1} alt="" />
                     <img src={g_2} alt="" />

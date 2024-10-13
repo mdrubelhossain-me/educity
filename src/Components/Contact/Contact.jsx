@@ -34,7 +34,7 @@ const Contact = () => {
 
 
     return (
-        <div className='container contact'>
+        <div className='container contact' id='contact'>
             <div className="contact-col">
                 <h3>Send us a Message</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati consequuntur quia odio est doloribus ut eius. Commodi harum doloribus ut similique consequatur assumenda inventore recusandae nostrum. Cupiditate, fuga blanditiis?</p>
