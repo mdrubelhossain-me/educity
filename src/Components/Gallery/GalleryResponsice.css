@@ -1,0 +1,12 @@
+
+
+@media (max-width: 800px){
+    .gallery{
+        flex-wrap: wrap;
+        column-gap: 15px;
+    }
+    .gallery img{
+        width: 48%;
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,33 @@
+
+
+@media(max-width: 800px){
+    .contact{
+        flex-direction: column;
+        row-gap: 45px;
+    }
+    .contact .contact-col h3{
+        font-size: 20px;
+    }
+    .contact .contact-col p{
+        font-size: 14px;
+    }
+    .contact .contact-col{
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+    .contact{
+        flex-direction: column;
+        row-gap: 45px;
+    }
+    .contact .contact-col h3{
+        font-size: 20px;
+    }
+    .contact .contact-col p{
+        font-size: 14px;
+    }
+    .contact .contact-col{
+        width: 100%;
+    }
+}

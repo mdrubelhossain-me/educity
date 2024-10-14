@@ -8,10 +8,12 @@ import Gallery from './Components/Gallery/Gallery';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
 
 const App = () => {
   return (
     <div>
+      <div>
       <Navbar/>
       <Hero/>
       <Title subTitle='Our Program' title='What We Offer'/>
@@ -24,6 +26,8 @@ const App = () => {
       <Title subTitle='Contact' title='Get In Touch'/>
       <Contact/>
       <Footer/>
+      </div>
+      <VideoPlayer/>
     </div>
   );
 };

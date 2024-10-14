@@ -52,7 +52,7 @@ const Contact = () => {
                     <input type="text" name='phone' id='phone' placeholder='Phone' required />
                     <label htmlFor="details">Details</label>
                     <textarea name="details" id="details" rows={8} placeholder='Details' required></textarea>
-                    <button type='submit' className='btn'>Send Now</button>
+                    <button type='submit' className='btn'>Send Now &rarr;</button>
                 </form>
                 <span>{result}</span>
             </div>
